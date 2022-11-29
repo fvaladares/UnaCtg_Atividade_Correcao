@@ -25,6 +25,12 @@ public class Pessoa {
         return sexo;
     }
 
+    public Pessoa(String nome, int idade, String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+    }
+
     public void setSexo(String sexo) {
         this.sexo = sexo.toUpperCase(Locale.ROOT);
     }
