@@ -2,6 +2,16 @@ public class Cliente extends Pessoa {
     private double valorDivida;
     private int anoNascimento;
 
+    public Cliente(String nome,
+                   int idade,
+                   String sexo,
+                   double valorDivida,
+                   int anoNascimento) {
+        super(nome, idade, sexo);
+        this.valorDivida = valorDivida;
+        this.anoNascimento = anoNascimento;
+    }
+
     public double getValorDivida() {
         return valorDivida;
     }

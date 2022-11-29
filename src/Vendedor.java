@@ -1,6 +1,18 @@
-public class Vendedor {
+public class Vendedor extends Empregado {
     private double valorVendas;
     private int qtdVendas;
+
+    public Vendedor(String nome,
+                    int idade,
+                    String sexo,
+                    double salario,
+                    String matricula,
+                    double valorVendas,
+                    int qtdVendas) {
+        super(nome, idade, sexo, salario, matricula);
+        this.valorVendas = valorVendas;
+        this.qtdVendas = qtdVendas;
+    }
 
     public double getValorVendas() {
         return valorVendas;
